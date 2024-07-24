@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Voting App</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+              <a class="navbar-brand">Voting App</a>
+                <div id="account" class="d-flex"></div>
+            </div>
+        </nav>
+
+        <div id="app">
+            <p>Voting Period Ends At: <span id="endTime"></span></p>
+            <p>(question)</p>
+            <p>
+                <button onclick="vote(true)">Vote Yes</button>
+                <button onclick="vote(false)">Vote No</button>
+            </p>
+            <p>Results:</p>
+            <p>Yes: <span id="yesVotes">0</span></p>
+            <p>No: <span id="noVotes">0</span></p>
+        </div>
+
+
+        <script type="module" src="app.js"></script>
+    </body>
+</html>
